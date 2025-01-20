@@ -48,7 +48,7 @@ const Jewelery =({addToCart, cart})=> {
 
     <h1> welcome Jewelery page</h1>
     <p>Welcome to our Jewelry Collection, where elegance meets craftsmanship. Explore a stunning range of exquisite jewelry designed to complement every style and occasion. From timeless classics like diamond-studded earrings and gold necklaces to modern statement pieces, our collection offers something for everyone.
-        Each piece is carefully crafted using premium materials, ensuring quality and durability that lasts a lifetime. Whether you're shopping for a special gift or treating yourself, our jewelry is perfect for adding a touch of sophistication to any outfit.
+        Each piece is carefully crafted using premium materials, ensuring quality and durability that lasts a lifetime. Whether you are shopping for a special gift or treating yourself, our jewelry is perfect for adding a touch of sophistication to any outfit.
         Discover collections that celebrate individuality, with designs that cater to all tastes—minimalist, bold, vintage, or contemporary. Our user-friendly site makes it easy to filter by material, style, and price, helping you find the perfect piece effortlessly.
         Shop with confidence knowing we offer secure checkout and excellent customer service. Celebrate life’s precious moments with jewelry that sparkles as bright as your memories. Start browsing now!</p>
 </div>
