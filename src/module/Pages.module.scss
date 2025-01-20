@@ -1,0 +1,125 @@
+.main-jewels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 20px;
+}
+
+.main-wrapper {
+  border: 5px solid #912578;
+  width: 100%;
+  height: 350px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+
+}
+
+.inside-content {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.inside-content h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  object-fit: contain;
+}
+
+.card-wrapper {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #333;
+  object-fit: contain;
+}
+
+
+
+
+.inside-desc{
+  color: #510938;
+  display: flex;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #6c1f45;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+
+  box-shadow: 0 4px 8px rgba(164, 106, 174, 0.1);
+
+  &:hover {
+    background-color: #bc6394;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(225, 212, 212, 0.15);
+  }
+
+}
+
+
+.jewl-header{
+  border: 1px solid rgba(129, 56, 119, 0.34);
+background-color: rgba(129, 56, 119, 0.34);
+margin-top: 2rem;
+border-radius: 20px;
+  h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #350329;
+  }
+  p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #290d35;
+  }
+}
+
+
+.no-results{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #551637;
+
+  h3{  display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #551637;}
+}
+
+.loading{
+  color: #61095c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
