@@ -3,9 +3,10 @@ import Footer from "../components/Footer.jsx";
 import Categories from "../components/Categories.jsx";
 import {useEffect, useState} from "react";
 import axios from "axios";
-import classes from "../module/pages.module.scss";
+import classes from "../module/Pages.module.scss";
 
 
+// eslint-disable-next-line react/prop-types
 const Jewelery =({addToCart, cart})=> {
 
 
@@ -43,7 +44,7 @@ const Jewelery =({addToCart, cart})=> {
 
             <Navbar cart={cart} ></Navbar>
             <Categories search={search} onSearchChange={onSearchChange} />
-<div className={classes['jewl-header']}>
+<div className={classes['jewel-header']}>
 
     <h1> welcome Jewelery page</h1>
     <p>Welcome to our Jewelry Collection, where elegance meets craftsmanship. Explore a stunning range of exquisite jewelry designed to complement every style and occasion. From timeless classics like diamond-studded earrings and gold necklaces to modern statement pieces, our collection offers something for everyone.
@@ -56,7 +57,7 @@ const Jewelery =({addToCart, cart})=> {
                     <div className={classes['loading']}>
                         <h3 className={classes['loading']}>  Jewelery are Loading</h3>
                     </div>
-                ) :filteredCards.length === 0 ? (
+                ) : filteredCards.length === 0 ? (
                     <div className={classes['no-results']}>
                         <h3>
                             sorry, we could not find product you were looking for please try again</h3>
