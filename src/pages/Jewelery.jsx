@@ -4,6 +4,7 @@ import Categories from "../components/Categories.jsx";
 import {useEffect, useState} from "react";
 import axios from "axios";
 import classes from "../module/Pages.module.scss";
+import {Link} from "react-router-dom";
 
 
 // eslint-disable-next-line react/prop-types
@@ -64,23 +65,26 @@ const Jewelery =({addToCart, cart})=> {
                     </div>
                 ) : (
                     filteredCards.map((component) => (
-                        <div className={classes['main-wrapper']} key={component.id}>
-                            <div className={classes['content']}>
-                                <div className={classes['img']}>
-                                    <img src={component.image} alt={component.title} className={classes['img']}/>
+                        <div key={component.id} className={classes['main-wrapper']}>
+                            <Link to={`/product/${component.id}`} className={classes['card-link']}>
+                                <div className={classes['content']}>
+                                    <div className={classes['img']}>
+                                        <img src={component.image} alt={component.title} className={classes['img']}/>
+                                    </div>
+                                    <h3 className={classes['card-title']}>{component.title}</h3>
+                                    <div className={classes['inside-content']}>
+                                        <span
+                                            className={classes['inside-desc']}>Category: <h3>{component.category}</h3></span>
+                                        <span className={classes['inside-desc']}>Price: <h3>${component.price}</h3></span>
+                                    </div>
                                 </div>
-                                <h3>{component.title}</h3>
-                                <div className={classes['inside-content']}>
-                                    <span
-                                        className={classes['inside-desc']}>Category: <h3>{component.category}</h3></span>
-                                    <span className={classes['inside-desc']}>Price: <h3>${component.price}</h3></span>
-                                    <button
-                                        className={classes['button']}
-                                        onClick={() => handleAddToCart(component)}>
-                                        ADD TO CART
-                                    </button>
-                                </div>
-                            </div>
+                            </Link>
+
+                            <button
+                                className={classes['button']}
+                                onClick={() => handleAddToCart(component)}>
+                                ADD TO CART
+                            </button>
                         </div>
                     ))
                 )}
