@@ -61,7 +61,7 @@ const Jewelery =({addToCart, cart})=> {
                     <div className={classes['no-results']}>
                         <h3>
                             sorry, we could not find product you were looking for please try again</h3>
-                    </div> // Show no results message
+                    </div>
                 ) : (
                     filteredCards.map((component) => (
                         <div className={classes['main-wrapper']} key={component.id}>

@@ -5,6 +5,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import classes from "../module/Pages.module.scss";
 
+// eslint-disable-next-line react/prop-types
 const MensClothing =({addToCart, cart})=> {
 
     const [components, setComponents] = useState([])
@@ -45,7 +46,7 @@ const MensClothing =({addToCart, cart})=> {
             <Navbar cart={cart} ></Navbar>
             <Categories search={search} onSearchChange={onSearchChange} />
 
-            <div className={classes['jewl-header']}>
+            <div className={classes['jewel-header']}>
 
                 <h1> welcome Mans Clothing page</h1>
                 <p>Welcome to our Men’s Clothing Collection, where style meets functionality. Discover a curated range of apparel designed to keep you looking sharp and feeling comfortable for every occasion. From tailored suits and crisp shirts for formal events to casual t-shirts, jeans, and outerwear for everyday wear, we’ve got your wardrobe needs covered.

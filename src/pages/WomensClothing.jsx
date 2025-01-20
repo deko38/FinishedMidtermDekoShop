@@ -5,6 +5,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import classes from "../module/Pages.module.scss";
 
+// eslint-disable-next-line react/prop-types
 const WomensClothing =({addToCart, cart})=> {
 
     const [components, setComponents] = useState([])
@@ -45,7 +46,7 @@ const WomensClothing =({addToCart, cart})=> {
             <Categories search={search} onSearchChange={onSearchChange} />
 
 
-            <div className={classes['jewl-header']}>
+            <div className={classes['jewel-header']}>
 
                 <h1> welcome Womans Clothing page</h1>
                 <p>Welcome to our Women’s Clothing Collection, where style meets comfort and elegance. Discover a wide range of trendy and timeless fashion pieces designed to suit every occasion and personality. From chic casual wear to sophisticated formal attire, we offer options for work, weekend outings, or special events.

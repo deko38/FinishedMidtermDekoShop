@@ -5,6 +5,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import classes from "../module/Pages.module.scss";
 
+// eslint-disable-next-line react/prop-types
 const Electronics =({addToCart, cart})=> {
 
     const [components, setComponents] = useState([])
@@ -42,7 +43,7 @@ const Electronics =({addToCart, cart})=> {
             <Navbar cart={cart}  ></Navbar>
             <Categories  search={search} onSearchChange={onSearchChange} />
 
-            <div className={classes['jewl-header']}>
+            <div className={classes['jewel-header']}>
 
                 <h1> welcome Electronics page</h1>
                 <p>Welcome to our Electronics Store, your one-stop destination for cutting-edge technology and innovative gadgets. Explore an extensive range of top-quality electronics designed to make your life smarter, more efficient, and enjoyable. From the latest smartphones and sleek laptops to state-of-the-art smart home devices and powerful gaming accessories, we have something for everyone.
